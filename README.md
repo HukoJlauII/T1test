@@ -14,7 +14,7 @@
 [![2023-09-15-150938504.png](https://i.postimg.cc/tg9hrxLG/2023-09-15-150938504.png)](https://postimg.cc/qNZhqzJ1)
 ## Документация API
 Для удобства была разработана документация API с использованием Swagger \
-Документация доступна по ссылке :link: [Доументация Swagger](http://localhost:8080/swagger-ui/index.html#/)
+Документация доступна по ссылке :link: [Доументация Swagger](http://localhost:8080/swagger-ui/index.html#/) \
 Также была разработана документация JavaDoc \
 Документация доступна по ссылке :link: [Доументация JavaDoc](http://localhost:63342/T1test/javadoc/com/example/t1test/package-summary.html)
 ## Тестирование
