@@ -12,12 +12,22 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
+/**
+ * The type Controller test.
+ *
+ * @author Glushko Nikita
+ */
 @SpringBootTest
 @AutoConfigureMockMvc
 public class ControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    /**
+     * Test for successful request.
+     *
+     * @throws Exception the exception
+     */
     @Test
     public void getSymbolFrequencySuccess() throws Exception {
         mockMvc.perform(get("/api/frequency")
@@ -28,6 +38,11 @@ public class ControllerTest {
                 .andExpect(jsonPath("$.size()").value(3));
     }
 
+    /**
+     * Test for bad request.
+     *
+     * @throws Exception the exception
+     */
     @Test
     public void getSymbolFrequencyBadRequest() throws Exception {
         mockMvc.perform(get("/api/frequency")
@@ -35,6 +50,11 @@ public class ControllerTest {
                 .andExpect(status().isBadRequest());
     }
 
+    /**
+     * Test for user's wrong input.
+     *
+     * @throws Exception the exception
+     */
     @Test
     public void getSymbolFrequencyFail() throws Exception {
         mockMvc.perform(get("/api/frequency")

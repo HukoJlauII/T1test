@@ -29,10 +29,10 @@ import java.util.stream.Collectors;
 public class Controller {
 
     /**
-     * Подсчёт частоты встречи символов в строке.
+     * Gets symbol frequency from string.
      *
-     * @param string строка на вход
-     * @return Словарь символов,отсортированный в порядке убывания частоты их встречи
+     * @param string the string for handling
+     * @return map with symbols as key, and it's frequency as value sorted by value
      */
     @Operation
             (
